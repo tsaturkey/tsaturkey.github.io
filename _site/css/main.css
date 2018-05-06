@@ -204,11 +204,11 @@ transform: translate(-50%, -50%);}*/
 .home-scene-intro-section__heading{position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%);font-size:5em;}
+transform: translate(-50%, -50%);}
 
 .home-scene-intro-section__image-groups{display:none}
 }
-p{font-size:1.7em;}
+
 
 }
 
@@ -221,7 +221,7 @@ home-scene-intro-section__image-group>img {
     margin-bottom: 40px;
     width: 400px;;
 }
-.maintext{font-size:5em;}
+
 }
 
 
@@ -334,9 +334,7 @@ p {
     body {
         font-size:1em;
     }
-  .home-scene-intro-section__heading{font-size:3em;
 
-}
 .app-logo{
     display: none !important;
 
