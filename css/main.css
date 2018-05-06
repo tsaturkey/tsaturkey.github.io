@@ -1,10 +1,10 @@
-body { margin: 60px auto; overflow-x:hidden;font-size:1.5em;background-image:url('/round/round.png');}
+body { margin: 60px auto; overflow-x:hidden;font-size:1.2em;background-image:url('/round/round.png');}
 /* Background pattern from Subtle Patterns */
 /* CC BY-SA 3.0 - Subtle Patterns © Toptal Designers.*/
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
 
-p, ul { font-size: 1.7em; line-height: 1.4em; color: #333; }
+p, ul { font-size: 1.2em; line-height: 1.4em; color: #333; }
 
 h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 h1 { font-size: 3em;  }
@@ -102,12 +102,7 @@ h1 {
 
   }}
 
-@media screen and (min-width: 1600px) {
 
-
-p{font-size:2em;}
-
-}
 
 
 
@@ -149,8 +144,7 @@ p{font-size:2em;}
 
  .home-scene-intro-section__heading{position: absolute;
 top: 50%;
-/*left: 50%;9{
-transform: translate(-50%, -50%);}*/
+
 
 
 }
