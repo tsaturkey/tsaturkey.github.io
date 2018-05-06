@@ -10,7 +10,7 @@ h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 h1 { font-size: 3em;  }
 h2 { font-size: 2.7em; }
 h3 { font-size: 2.3em; }
-h4 { font-size: 1.9em; font-weight:bolder;}
+h4 { font-size: 1.9em; font-weight:bold;}
 
 nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
 nav ul li, footer ul li { display: inline; margin-right: 20px;color:#5a44ff ;}
@@ -43,53 +43,12 @@ img{border-radius:50px;}
   background-size:cover;
   background-position: center;
 }
-//*.home-scene-intro-section__image-groups {
-    left: 0;
-    top: 0;
-    -webkit-transform: translate(20%, -28%) rotate(45deg);
-    -ms-transform: translate(20%, -28%) rotate(45deg);
-    transform: translate(20%, -28%) rotate(45deg);
-    -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
-    transform-origin: top left;
-    width: 1152px;
-}
-.home-scene-intro-section__image-groups::after {
-    display: block;
-    clear: both;
-    content: "";
-}
-.home-scene-intro-section__image-group:nth-child(1) {
-    margin-top: 180px;
-}
-.home-scene-intro-section__image-group {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    float: left;
-    margin: 0 20px;
-    width: 248px;
-}
-.home-scene-intro-section__image-group:nth-child(3) {
-    margin-top: 280px;
-}
-.home-scene-intro-section__image-group>img {
-    box-shadow: 0 40px 75px rgba(90,68,255,0.1);
-    display: block;
-    margin-bottom: 40px;
-    width: 100%;
-}
-.home-scene-intro-section__image-group:nth-child(4) {
-    margin-top: 580px;
-}
-
-*//
 
 .home-scene-intro-section__heading {
 
     
-    margin-top: -92.8px;
+   
     font-weight:bold;
-    font-size:8em;
     text-align:center;
 }
 .home-scene-intro-section__heading:after {
@@ -200,7 +159,7 @@ transform: translate(-50%, -50%);}*/
 }
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
 .home-scene-intro-section__heading{position: absolute;
 top: 50%;
 left: 50%;
@@ -407,11 +366,11 @@ article, aside, footer, header, nav, section {
 }
 .link {
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 1000;
     cursor: pointer;
     display: inline-block;
     font-size:1.1em;
-    letter-spacing: 10px;
+    letter-spacing: 3px;
     padding: 15px 0;
     position: relative;
     text-align: center;
