@@ -30,7 +30,7 @@ ul.posts li { list-style: none; }
 .cv .download { float: right; font-size: .8em; text-transform: uppercase; }
 
 img{border-radius:50px;}
-
+nav{margin-right:10px;}
 .navtext{text-align:left}
 
 //*https://www.toptal.com/designers/subtlepatterns/page/2/*//
@@ -361,10 +361,11 @@ article, aside, footer, header, nav, section {
     cursor: pointer;
     display: inline-block;
     font-size:1.1em;
-    letter-spacing: 2px;
-    padding: 15px 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
     position: relative;
     text-align: center;
     text-transform: uppercase;
+color:#5a44ff;font-weight:bold;" 
     transition: all 0.3s;
 }http://127.0.0.1:4000/img/pexels-photo-373543.jpeg
