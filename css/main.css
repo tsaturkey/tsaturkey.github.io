@@ -7,7 +7,7 @@ a:hover { text-decoration: underline; }
 p, ul { font-size: 1.2em; line-height: 1.4em; color: #333; }
 
 h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
-h1 { font-size: 3em;  }
+h1 { font-size: 4.5em;  }
 h2 { font-size: 2.7em; }
 h3 { font-size: 2.3em; }
 h4 { font-size: 1.9em; font-weight:bold;}
@@ -70,7 +70,7 @@ h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: #3e3d4e;
-    font-size: 90px;
+    
     letter-spacing: -3px;
     line-height: 1em;
 
@@ -187,7 +187,14 @@ home-scene-intro-section__image-group>img {
 
 }
 
+@media screen and (max-height: 667px;) {
+  h1 {
+    font-size:3em;
 
+
+  }
+
+}
 .home-scene-uncover-section {
     margin-bottom: 134.4px;
     margin-top: 121.6px;
@@ -295,6 +302,7 @@ p {
     text-align: center;
 }
 .home-scene-intro-section__content{ display: none !important;}
+h1{font-size:3em;"}
 
 }
 
