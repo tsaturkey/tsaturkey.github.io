@@ -33,6 +33,7 @@ ul.posts li { list-style: none; }
 nav{margin-right:10px;}
 .navtext{text-align:left}
 .about{margin-left: 10px;}
+.mdl-layout-title{color:white;background-color:#c4c9ce;}
 
 //*https://www.toptal.com/designers/subtlepatterns/page/2/*//
 
@@ -288,7 +289,7 @@ p {
 
 
 
-@media screen and (max-width: 699px) and (min-width: 120px) {
+@media screen and (max-width: 800px) and (min-width: 120px) {
     body {
         font-size:1em;
     }
