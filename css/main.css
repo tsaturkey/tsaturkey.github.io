@@ -288,7 +288,7 @@ p {
 
 
 
-@media screen and (max-width: 699px) and (min-width: 120px) {
+@media screen and (max-width: 750px) and (min-width: 120px) {
     body {
         font-size:1em;
     }
