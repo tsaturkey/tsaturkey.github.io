@@ -39,7 +39,7 @@
   background-position: center;"><div class="home-scene-intro-section__bg" style="background-image: url('http://typeandpixel.com.au/wp-content/themes/type-and-pixel/assets/images/common/pattern-1.png')"></div>
 
 
-
+<script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 
 
@@ -63,6 +63,17 @@
 
 </div>
 
+
+<script>$(function() {
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+         $(‘body’).addClass(‘white’)
+      }
+      if ($(this).scrollTop() < 50) {
+         $(‘body’).removeClass(‘white’)
+      }
+   });
+});</script>
 <div class="home-scene-intro-section__heading" style="text-align:center;">
 
 <h1  style="opacity: 1;font-weight:bold;">TSA Turkey<br>Robotics Company</h1> 
