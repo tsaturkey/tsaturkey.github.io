@@ -33,7 +33,7 @@
 <div class="container">
 
   <body style="margin:auto;">
-<section class="home-scene-intro-section" style="height:100vh; box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);background-image:url('../yenii.png');
+<section class="home-scene-intro-section" id="larapar" style="height:100vh; box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);background-image:url('../yenii.png');
   background-repeat:no-repeat;
   background-size:cover;
   background-position: center;"><div class="home-scene-intro-section__bg" style="background-image: url('http://typeandpixel.com.au/wp-content/themes/type-and-pixel/assets/images/common/pattern-1.png')"></div>
@@ -53,7 +53,7 @@
 <a href="https://tsaturkey.github.io/" class="app-logo">
         <img src="robot.png" width="150px" >
     </a>
-       
+
 
      <nav class="app-menu">
         <a style="margin-right:10px;color:#5a44ff;font-weight:bold;"class="link app-menu__link app-menu__link--hire" data-role="app-menu-link" href="/about">About</a>
@@ -67,7 +67,7 @@
 
 <div class="home-scene-intro-section__heading" style="text-align:center;">
 
-<h1  style="opacity: 1;font-weight:bold;">TSA Turkey<br>Robotics Company</h1> 
+<h1  style="opacity: 1;font-weight:bold;">TSA Turkey<br>Robotics Company</h1>
 <p style="font-size:1.3em;">Artificial Intelligence for business and education.</p>
 
 
@@ -78,9 +78,9 @@
 
 
 <section class="colon">
- <div class="container" style="margin-bottom:50px;">
+ <div class="container"  style="margin-bottom:50px;">
 
- 
+
 <div style="width:70%;margin:auto;margin-top:50px;"><p style="font-family: 'Monoton', cursive;">
 
    <h1>Education</h1>
@@ -121,7 +121,7 @@ Educators, who have limited time and availability, can’t always help their stu
 
 The current education system demands students to decide on their career paths early on, which can be challenging at such a young age. Fortunately the AI can help the students by acting as a guide, based on analytical data on their strengths, weaknesses, and interests on each subject.
 
-AI does not only explore their possible future plans, but also assists them by putting more emphasis on specific subjects. 
+AI does not only explore their possible future plans, but also assists them by putting more emphasis on specific subjects.
 
 </p>
 
@@ -166,8 +166,8 @@ In deep learning, each level learns to transform its input data into a slightly 
 
 
 <dl id="faqs">
-  
- 
+
+
   <dt>Computer Vision</dt>
   <dd><p style="text-align:left;">Computer vision deals with how computers can be made for gaining high-level understanding from digital images or videos. From the perspective of engineering, it seeks to automate tasks that the human visual system can do.<br>
 
@@ -178,7 +178,7 @@ Some functions of computer vision are, but not limited to;</p>
 <li>Organizing information, e.g., for indexing databases of images and image sequences.</li>
 </ul>
 </dd>
- 
+
   <dt>Speech Recognition</dt>
   <dd><p style="text-align:left;">Speech recognition is a sub-field of computational linguistics that develops methodologies and technologies that enables the recognition and translation of spoken language into text by computers. It is also known as "automatic speech recognition" (ASR), "computer speech recognition", or just "speech to text" (STT). It incorporates knowledge and research in the linguistics, computer science, and electrical engineering fields.
 
@@ -206,19 +206,19 @@ On a basic level, MT performs simple substitution of words in one language for w
 
 Another remarkable advantage that Artificial Intelligence will bring into education is the AI-powered, data-driven understanding of individual students’ learning needs. As teachers can’t always notice when students have trouble following the lesson, or their individual weaknesses, AI will closely observe students to help them learn with optimal efficiency. AI is also naturally objective, and thus can help with grading students more fairly. This way, students can show their full potential and drastic gaps between students can be overcome.</p>
 </dd>
- 
+
   <dt>Business</dt>
   <dd><p style="text-align:left;">It is undeniable that businesses currently benefit considerably from AI, in both sales as well as in getting tasks done more efficiently. As a result, there’s a growing trend towards the automation of routine work. Artificial intelligence is quickly automating routine processes, the same way industrial era machines automated physical labor. Not only are these technologies extremely capable, they also don’t require coffee, lunch or smoke breaks.<br>
 
 
 Every business manager, entrepreneur, and business decision maker should look into the benefits that artificial intelligence can offer them in their commercial endeavors. As AI technologies are expected to develop at an increasing pace, AI will gain even importance in the future, becoming a prominent point of commercial competition.</p>
 </dd>
- 
+
   <dt>Beyond</dt>
   <dd><h2>Healthcare</h2>
 <p style="text-align:left;">
 
-Artificial intelligence is steadily gaining importance in the medical field. Artificial intelligence in healthcare is used in creation of algorithms and software to approximate human cognition in the analysis of complex medical data. The primary aim of health-related AI applications is to analyze relationships between prevention or treatment techniques and patient outcomes. AI programs have been developed and applied to practices such as diagnosis processes, treatment protocol development, drug development, personalized medicine,and patient monitoring and care. 
+Artificial intelligence is steadily gaining importance in the medical field. Artificial intelligence in healthcare is used in creation of algorithms and software to approximate human cognition in the analysis of complex medical data. The primary aim of health-related AI applications is to analyze relationships between prevention or treatment techniques and patient outcomes. AI programs have been developed and applied to practices such as diagnosis processes, treatment protocol development, drug development, personalized medicine,and patient monitoring and care.
 </p>
 
 <h2>Finance and Trading</h2>
@@ -243,12 +243,25 @@ By design, the AI is created with traditional security techniques that prevents 
 <p style="text-align:left;margin-bottom:80px;">The robotics industry expands rapidly, in fact the investments in robotics are expected to exceed $180 billion by 2020. As the market grows, prices will go down, making robotics services available to the general public. Thus it is sensible to get involved with the industry and start investing early on.</p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./particle.js"></script>
 <script type="text/javascript">
     $("#faqs dd").hide();
     $("#faqs dt").click(function () {
         $(this).next("#faqs dd").slideToggle(500);
         $(this).toggleClass("expanded");
     });
+    particlesJS.load('larapar', 'particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+    const topcheck = () => {
+      if ($(window).scrollTop()) {
+        $(".app-logo").fadeOut();
+      } else {
+        $(".app-logo").fadeIn();
+      }
+    };
+    topcheck();
+    $(document).scroll(topcheck)
 </script>
 <style>
 #faqs dt, #faqs dd { padding: 0 0 0 50px }
