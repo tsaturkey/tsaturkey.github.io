@@ -66,8 +66,8 @@ nav{margin-right:10px;}
 .home-scene-intro-section__heading {
 
     left:15%;
-    top: 75%;
-    /* transform: translateY(-50%); */
+    top: 50%;
+
     position: absolute;
 }
 h1 {
